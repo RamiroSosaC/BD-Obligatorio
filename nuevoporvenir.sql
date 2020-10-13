@@ -137,4 +137,4 @@ SELECT proveedores.nombre_cont, proveedores.razsocial, telproveedores.telefono
 FROM proveedores
 INNER JOIN telproveedores ON proveedores.nrorut=telproveedores.nrorut;
 
-GROUP BY proveedores.nombre_cont
+--GROUP BY proveedores.nombre_cont

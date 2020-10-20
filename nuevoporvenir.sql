@@ -1,14 +1,13 @@
 
---CREAR BASE DE DATOS--
+#CREAR BASE DE DATOS
 
 CREATE DATABASE elporvenir;
 
 
-								--------------------------
-								--CREACION DE LAS TABLAS--
-								--------------------------
+								
+								#CREACION DE LAS TABLAS#
 
---CREAR TABLA CLIENTES--
+#CREAR TABLA CLIENTES
 
 CREATE TABLE clientes(
 	cedula VARCHAR(15),
@@ -24,7 +23,7 @@ PRIMARY KEY (cedula)
 );
 
 
---CREAR TABLA TELÉFONO DE CLIENTES--
+#CREAR TABLA TELÉFONO DE CLIENTES
 
 CREATE TABLE telclientes(
 	cedula VARCHAR(15),
@@ -35,7 +34,7 @@ CONSTRAINT fk_telclientes FOREIGN KEY (cedula) REFERENCES clientes(cedula)
 );
 
 
---CREAR TABLA PRODUCTOS--
+#CREAR TABLA PRODUCTOS
 
 CREATE TABLE productos(
 	codigo VARCHAR(20), 
@@ -50,7 +49,7 @@ PRIMARY KEY (codigo)
 
 
 
---CREAR TABLA PROVEEDORES--
+#CREAR TABLA PROVEEDORES
 
 CREATE TABLE proveedores(
 	nrorut INTEGER,
@@ -65,7 +64,7 @@ PRIMARY KEY (nrorut)
 );
 
 
---CREAR TABLA TELÉFONO DE PROVEEDORES--
+#CREAR TABLA TELÉFONO DE PROVEEDORES
 
 CREATE TABLE telproveedores(
 	nrorut INTEGER,
@@ -77,7 +76,7 @@ CONSTRAINT fk_telproveedores FOREIGN KEY (nrorut) REFERENCES proveedores(nrorut)
 );
 
 
---CREAR TABLA RELACIÓN PROVEE--
+#CREAR TABLA RELACIÓN PROVEE
 
 CREATE TABLE provee(
 
@@ -91,7 +90,7 @@ CONSTRAINT fk_proveencodigo FOREIGN KEY (codigo) REFERENCES productos(codigo)
 );
 
 
---CREAR TABLA RELACIÓN COMPRA--
+#CREAR TABLA RELACIÓN COMPRA
 
 CREATE TABLE compra(
 	cedula VARCHAR(15),
@@ -105,9 +104,9 @@ CONSTRAINT fk_compra2 FOREIGN KEY (codigo) REFERENCES productos(codigo)
 );
 
 
-								------------------------------
-								-- INSERTAR DATOS DE PRUEBA --
-								------------------------------
+								
+								#INSERTAR DATOS DE PRUEBA
+								
 
 INSERT INTO clientes VALUES ('50740357', 'Sergio', 'Ramiro', 'Sosa', 'Cabrera', 'Pan de Azucar', 'San Carlos', 469), ('43403421', 'Hector', 'Nahuel', 'Blanco', 'Amarillo', 'Las Piedras', 'Canelones', 883), ('79932813', 'Maxi', 'Roberto', 'Martinez', 'Rodriguez', 'Las Piedras', 'Canelones', 721), ('85327649', 'Manuel', 'Vivia', 'Pozada', 'Vigliante', 'Maldonado Nuevo', 'Maldonado', 122), ('65437891', 'Paola', 'Martina', 'Grafo', 'Conexo', 'Marconi', 'Montevideo', 649);
 

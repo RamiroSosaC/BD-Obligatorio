@@ -100,7 +100,6 @@ CONSTRAINT fk_compra2 FOREIGN KEY (codigo) REFERENCES productos(codigo)
 
 );
 
-
 								
 								#INSERTAR DATOS DE PRUEBA
 								
@@ -118,17 +117,3 @@ INSERT INTO telproveedores VALUES (100, '092323357'), (100, '093227377'), (101, 
 INSERT INTO provee VALUES (100, '1', 26.70), (102, '1', 25.70), (104, '3', 77), (104, '4', 120.25), (101, '3', 6.50), (103, '2', 88.65);
 
 INSERT INTO compra VALUES ('50770338', '1'), ('43403421', '2'), ('43403421', '1'), ('43403421', '3'), ('85327649', '5'), ('65437891', '2'), ('85327649', '4'), ('85327649', '2'), ('79932813', '3');
-
-
-								
-								#CONSULTAS SQL
-								
-
-#LISTADO DE TODOS LOS CLIENTES
-SELECT* FROM clientes
-
-#LISTADO DE PROVEEDORES CON: RAZÓN SOCIAL, NOMBRE Y TELÉFONOS
-
-SELECT nombre_cont AS 'Nombre de Contacto', razsocial AS 'Razón Social', telproveedores.telefono AS 'Teléfono'
-FROM proveedores LEFT JOIN telproveedores ON proveedores.nrorut=telproveedores.nrorut GROUP BY nombre_cont;
-

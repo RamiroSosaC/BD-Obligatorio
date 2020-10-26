@@ -108,9 +108,9 @@ CONSTRAINT fk_compra2 FOREIGN KEY (codigo) REFERENCES productos(codigo)
 								#INSERTAR DATOS DE PRUEBA
 								
 
-INSERT INTO clientes VALUES ('50740357', 'Sergio', 'Ramiro', 'Sosa', 'Cabrera', 'Pan de Azucar', 'San Carlos', 469), ('43403421', 'Hector', 'Nahuel', 'Blanco', 'Amarillo', 'Las Piedras', 'Canelones', 883), ('79932813', 'Maxi', 'Roberto', 'Martinez', 'Rodriguez', 'Las Piedras', 'Canelones', 721), ('85327649', 'Manuel', 'Vivia', 'Pozada', 'Vigliante', 'Maldonado Nuevo', 'Maldonado', 122), ('65437891', 'Paola', 'Martina', 'Grafo', 'Conexo', 'Marconi', 'Montevideo', 649);
+INSERT INTO clientes VALUES ('50770338', 'Sergio', 'Ramiro', 'Sosa', 'Cabrera', 'Pan de Azucar', 'San Carlos', '469'), ('43403421', 'Hector', 'Nahuel', 'Blanco', 'Amarillo', 'Las Piedras', 'Canelones', '883'), ('79932813', 'Maxi', 'Roberto', 'Martinez', 'Rodriguez', 'Las Piedras', 'Canelones', '721'), ('85327649', 'Manuel', 'Vivia', 'Pozada', 'Vigliante', 'Maldonado Nuevo', 'Maldonado', '122'), ('65437891', 'Paola', 'Martina', 'Grafo', 'Conexo', 'Marconi', 'Montevideo', '649');
 
-INSERT INTO telclientes VALUES ('50740357', '093636815'), ('50740357', '093656555'), ('43403421', '094536246'), ('65437891', '099146855'), ('79932813', '091002835'), ('85327649', '09234555');
+INSERT INTO telclientes VALUES ('50770338', '093636815'), ('50770338', '093656555'), ('43403421', '094536246'), ('65437891', '099146855'), ('79932813', '091002835'), ('85327649', '09234555');
 
 INSERT INTO productos VALUES ('1', 'Barra de Cereal', '60 G', 'Quaker'), ('2', 'CocaCola', '1 L Vidrio', 'Coke'), ('3', 'Chocolates', '100 G', 'KitKat'), ('4', 'Harina', '500 G', 'El Molino'), ('5', 'Leche', '1 L', 'Parmalat');
 
@@ -120,7 +120,7 @@ INSERT INTO telproveedores VALUES (100, '092323357'), (100, '093227377'), (101, 
 
 INSERT INTO provee VALUES (100, '1', 26.70), (102, '1', 25.70), (104, '3', 77), (104, '4', 120.25), (101, '3', 6.50), (103, '2', 88.65);
 
-INSERT INTO compra VALUES ('50740357', '1'), ('43403421', '2'), ('43403421', '1'), ('43403421', '3'), ('85327649', '5'), ('65437891', '2'), ('85327649', '4'), ('85327649', '2'), ('79932813', '3');
+INSERT INTO compra VALUES ('50770338', '1'), ('43403421', '2'), ('43403421', '1'), ('43403421', '3'), ('85327649', '5'), ('65437891', '2'), ('85327649', '4'), ('85327649', '2'), ('79932813', '3');
 
 
 								

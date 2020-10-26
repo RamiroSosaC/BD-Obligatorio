@@ -11,11 +11,11 @@ CREATE DATABASE elporvenir;
 
 CREATE TABLE clientes(
 	cedula VARCHAR(15),
-  	primnombre VARCHAR(20),
+  	primnombre VARCHAR(20) NOT NULL,
   	segnombre VARCHAR(20),
-  	primapellido VARCHAR(20),
+  	primapellido VARCHAR(20) NOT NULL,
   	segapellido VARCHAR(20),
-  	localidad VARCHAR(20),
+  	localidad VARCHAR(20) NOT NULL,
   	calle VARCHAR(35),
   	nropuerta VARCHAR(15),
 
@@ -79,7 +79,7 @@ CREATE TABLE provee(
 
 nrorut INTEGER,
     	codigo VARCHAR(20),
-    	precio DECIMAL(10,2),
+    	precio DECIMAL(10,2) NOT NULL,
     
 PRIMARY KEY (nrorut, codigo),
 CONSTRAINT fk_proveenrut FOREIGN KEY (nrorut) REFERENCES proveedores(nrorut),

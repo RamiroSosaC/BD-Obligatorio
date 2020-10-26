@@ -46,9 +46,6 @@ PRIMARY KEY (codigo)
 );
 
 
-
-
-
 #CREAR TABLA PROVEEDORES
 
 CREATE TABLE proveedores(
